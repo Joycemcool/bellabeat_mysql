@@ -1,0 +1,99 @@
+CREATE DATABASE `bellabeat`;
+USE `bellabeat`;
+DROP TABLE IF EXISTS dailyintensities;
+-- CREATE TABLE INTO DATABASE, 
+CREATE TABLE dailyintensities (Id BIGINT, ActivityDay TEXT, SedentaryMinutes INT, LightlyActiveMinutes INT, FairlyActiveMinutes INT,
+VeryActiveMinutes INT, SedentaryActiveDistance INT, LightActiveDistance DOUBLE, ModeratelyActiveDistance DOUBLE, 
+VeryActiveDistance DOUBLE);
+LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/dailyIntensities_merged_file.csv'
+INTO TABLE  dailyintensities
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 rows;
+-- import minuteintensitieswide_merge
+DROP TABLE if exists minuteintensities_wide_merged;
+ CREATE TABLE minuteintensities_wide_merged (Id BIGINT, ActivityDay TEXT, Intensity00 int, 
+Intensity01 int, 
+Intensity02 int, 
+Intensity03 int, 
+Intensity04 int, 
+Intensity05 int, 
+Intensity06 int, 
+Intensity07 int, 
+Intensity08 int, 
+Intensity09 int, 
+Intensity10 int, 
+Intensity11 int, 
+Intensity12 int, 
+Intensity13 int, 
+Intensity14 int, 
+Intensity15 int, 
+Intensity16 int, 
+Intensity17 int, 
+Intensity18 int, 
+Intensity19 int, 
+Intensity20 int, 
+Intensity21 int, 
+Intensity22 int, 
+Intensity23 int, 
+Intensity24 int, 
+Intensity25 int, 
+Intensity26 int, 
+Intensity27 int, 
+Intensity28 int, 
+Intensity29 int, 
+Intensity30 int, 
+Intensity31 int, 
+Intensity32 int, 
+Intensity33 int, 
+Intensity34 int, 
+Intensity35 int, 
+Intensity36 int, 
+Intensity37 int, 
+Intensity38 int, 
+Intensity39 int, 
+Intensity40 int, 
+Intensity41 int, 
+Intensity42 int, 
+Intensity43 int, 
+Intensity44 int, 
+Intensity45 int, 
+Intensity46 int, 
+Intensity47 int, 
+Intensity48 int, 
+Intensity49 int, 
+Intensity50 int, 
+Intensity51 int, 
+Intensity52 int, 
+Intensity53 int, 
+Intensity54 int, 
+Intensity55 int, 
+Intensity56 int, 
+Intensity57 int, 
+Intensity58 int, 
+Intensity59 int);
+LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/minuteIntensitiesWide_merged.csv'
+INTO TABLE  minuteintensities_wide_merged
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+
+LINES TERMINATED BY '\n'
+IGNORE 1 rows;
+-- import data minuteintensity_narrow
+CREATE TABLE minuteintensities_narrow (Id BIGINT, ActivityDay TEXT, Intensity INT);
+LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/minuteIntensitiesnarrow_merged.csv'
+INTO TABLE  minuteintensities_narrow
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 rows;
+-- Import minutesleep_merged
+CREATE TABLE minutesleep_merged (Id BIGINT, Date TEXT, Value INT, logId BIGINT);
+LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/minuteSleep_merged.csv'
+INTO TABLE  minutesleep_merged
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 rows;
+dd 
