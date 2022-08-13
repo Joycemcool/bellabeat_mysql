@@ -44,3 +44,15 @@ Guiding questions
 ● How did you verify the data’s integrity?
 ● How does it help you answer your question?
 ● Are there any problems with the data?
+
+Exercise Intensity - METs
+MET stands for the metabolic equivalent of task. One MET is the amount of energy used while sitting quietly. Physical activities may be rated using METs to indicate their intensity. For example, reading may use about 1.3 METs while running may use 8-9 METs. METs can also be translated into light, moderate, and vigorous intensities of exercise.4
+
+User activities in this dataset are grouped into 4 categories: sedentary, light, moderate and vigorous intensities.
+
+MET Range	Description	Example
+0 - 1.5	Sedentary	Sitting, reclining, or lying down
+1.6 - 3.0	Light	Walking at a leisurely pace or standing in line at the store
+3.1 - 6.0	Moderate	Walking briskly, vacuuming, or raking leaves
+6.0+	Vigorous	Walking very quickly, running, taking an aerobics class, or shoveling snow
+These patterns can be used to classify users. The distribution of the activities of users shows that most have a preference for moderate and vigorous activity.
