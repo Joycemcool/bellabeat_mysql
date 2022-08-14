@@ -33,7 +33,7 @@ Quantitive: Thirty eligible Fitbit users consented to the submission of
             personal tracker data, including minute-level output for physical activity, heart rate, and sleep monitoring. It includes
             information about daily activity, steps, and heart rate that can be used to explore users’ habits.
             
-Limitation: not sure yet. 
+Limitation: the dataset is not clean and completed. 
 
 Prepare
 Guiding questions
@@ -57,4 +57,6 @@ MET Range	Description	Example
 6.0+	Vigorous	Walking very quickly, running, taking an aerobics class, or shoveling snow
 These patterns can be used to classify users. The distribution of the activities of users shows that most have a preference for moderate and vigorous activity.
 
-There are 5 kinds data. 1. Calories, Intensity, steps. They are related. Minute dataset seems useless and they occupy much bigger space. 
+There are 5 kinds data. 1. Calories, Intensity, steps. They are related. Minute dataset seems useless and they occupy much bigger space. 2.The table of heartbeat_second is not completed, only contains 14 record of 30 users. It's easy to cause bias so I remove it from the database. 
+
+
