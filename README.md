@@ -2,7 +2,15 @@
 google analytic certificate - capstone 
 Bellabeat, a high-tech manufacturer of health-focused products for women. Bellabeat is a successful small company, but they have the potential to become a larger player in the global smart device market. 
 
-Task: 1.analyzing smart device fitness data could help unlock new growth opportunities for the company. 
+## Product Portfolio
+○ Bellabeat app: The Bellabeat app provides users with health data related to their activity, sleep, stress, menstrual cycle, and mindfulness habits. This data can help users better understand their current habits and make healthy decisions. The Bellabeat app connects to their line of smart wellness products.
+○ Leaf: Bellabeat’s classic wellness tracker can be worn as a bracelet, necklace, or clip. The Leaf tracker connects to the Bellabeat app to track activity, sleep, and stress.
+○ Time: This wellness watch combines the timeless look of a classic timepiece with smart technology to track user activity, sleep, and stress. The Time watch connects to the Bellabeat app to provide you with insights into your daily wellness.
+○ Spring: This is a water bottle that tracks daily water intake using smart technology to ensure that you are appropriately hydrated throughout the day. The Spring bottle connects to the Bellabeat app to track your hydration levels.
+○ Bellabeat membership: Bellabeat also offers a subscription-based membership program for users. Membership gives users 24/7 access to fully personalized guidance on nutrition, activity, sleep, health and beauty, and mindfulness based on their lifestyle and goals.
+
+## Task:
+1.analyzing smart device fitness data could help unlock new growth opportunities for the company. 
       2.gain insight into how people are already using their smart devices. 
       3.guide marketing strategy for the company.
       4.To analyze smart device usage data in order to gain insight into how consumers use non-Bellabeat smart devices. select one
@@ -57,7 +65,14 @@ MET Range	Description	Example
 6.0+	Vigorous	Walking very quickly, running, taking an aerobics class, or shoveling snow
 These patterns can be used to classify users. The distribution of the activities of users shows that most have a preference for moderate and vigorous activity.
 
-There are 5 kinds data. 1. Calories, Intensity, steps. They are related. Minute dataset seems useless and they occupy much bigger space. 2.The table of heartbeat_second is not completed, only contains 14 record of 30 users. I firstly want to check if there is any user record abnormal heart beat in the dataset, which means the device might be able to be an alarm to high risk users. It's easy to cause bias so I remove it from the database. Only 8 users fill their weight in the dataset, which means quite a big part of the users are not willing to fill their weight manualy. If I use this dataset,  it could be bias too. However, weight is a tangeble metrix, I will try to use the only record and find some insight from them. To summarize, I will use daily and hourly calories, steps, and intensities, along with daily sleep， activities, and the existing weight data to look for the insight on how consumers use non-bellabeat devices. 
+There are 5 kinds data. 1. Calories, Intensity, steps. They are related. Minute dataset seems useless and they occupy much bigger space. 2.The table of heartbeat_second is not completed, only contains 14 record of 30 users. I firstly want to check if there is any user record abnormal heart beat in the dataset, which means the device might be able to be an alarm to high risk users. It's easy to cause bias so I remove it from the database. Only 8 users fill their weight in the dataset, which means quite a big part of the users are not willing to fill their weight manualy. If I use this dataset,  it could be bias too. However, weight is a tangeble metrix, I will try to use the only record and find some insight from them. To summarize, I will use daily and hourly calories, steps, and intensities, along with daily sleep， activities(including daily calories, steps and intensities), and the existing weight data to look for the insight on how consumers use non-bellabeat devices. 
+1) When is the most active hour generally? Generate content for marketing. 
+2) Is sedentary time related to weight loss? or is sedentary a bad habit? 
+3) 24 records in the daily_sleep. Does any of activities lead to better sleep? 
+4) Weight loss related to activities? 
+5) How to collect weight data? 
+6) The most active users and the least active users? What's their difference? 
+7) Activities corelate to calories? Veryactive or overall active? 
 
 
 
