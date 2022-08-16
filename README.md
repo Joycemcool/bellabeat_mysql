@@ -57,6 +57,8 @@ MET Range	Description	Example
 6.0+	Vigorous	Walking very quickly, running, taking an aerobics class, or shoveling snow
 These patterns can be used to classify users. The distribution of the activities of users shows that most have a preference for moderate and vigorous activity.
 
-There are 5 kinds data. 1. Calories, Intensity, steps. They are related. Minute dataset seems useless and they occupy much bigger space. 2.The table of heartbeat_second is not completed, only contains 14 record of 30 users. It's easy to cause bias so I remove it from the database. 
+There are 5 kinds data. 1. Calories, Intensity, steps. They are related. Minute dataset seems useless and they occupy much bigger space. 2.The table of heartbeat_second is not completed, only contains 14 record of 30 users. I firstly want to check if there is any user record abnormal heart beat in the dataset, which means the device might be able to be an alarm to high risk users. It's easy to cause bias so I remove it from the database. Only 8 users fill their weight in the dataset, which means quite a big part of the users are not willing to fill their weight manualy. If I use this dataset,  it could be bias too. However, weight is a tangeble metrix, I will try to use the only record and find some insight from them. To summarize, I will use daily and hourly calories, steps, and intensities, along with daily sleep， activities, and the existing weight data to look for the insight on how consumers use non-bellabeat devices. 
+
+
 
 
